@@ -359,9 +359,14 @@ table tbody tr td {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px) {}
     .showcase::after {
         box-shadow: inset 80px 80px 250px #000, inset -80px -80px 250px #000;
+    }
+
+    .showcase-content h1 {
+        font-weight: 400;
+        font-size: 2.2rem;
     }
     
     #tab-1-content .tab-1-content-inner {
@@ -376,5 +381,16 @@ table tbody tr td {
 
     #tab-2-content .tab-2-content-bottom {
         grid-template-columns: 1fr;
+    }
+
+    #tab-3-content .tab-content-item {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .btn-xl {
+        font-size: 1rem;
+        padding: 1.5rem 2.1rem;
+        text-transform: uppercase;
     }
 }
